@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
+      colors: {
+        mytext: ["#2c2c2c"],
+      },
     },
   },
   plugins: [],
