@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function Service() {
   return (
-    <div>
+    <div className="p-[24px]">
       {services.map((el) => {
         return <ServiceCard el={el}></ServiceCard>;
       })}
