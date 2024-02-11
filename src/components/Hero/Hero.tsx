@@ -9,7 +9,9 @@ export default function Hero() {
         alt=""
         className="absolute w-screen h-screen z-[-1]"
       />
+
       <div className="p-[40px] pt-[150px]">
+
         <div>
           <p className="text-[36px] leading-[45px] mb-[8px] font-medium text-[#2c2c2c]">
             Do it all with Adobe Creative Cloud.
@@ -29,10 +31,12 @@ export default function Hero() {
             Firefly
           </p>
         </div>
+
       </div>
+      <Service></Service>
+
 
       {/* service seciton*/}
-      <Service></Service>
     </div>
   );
 }

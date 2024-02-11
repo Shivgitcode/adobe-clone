@@ -6,6 +6,6 @@
 
 @layer utilities {
   .myBackground {
-    background-image: url(./assets/asset\ 5.png);
+    background-image: url("./assets/asset\ 5.png");
   }
 }
