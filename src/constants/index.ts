@@ -1,4 +1,4 @@
-import { adobeExpress, ps } from "../assets";
+import { adobeExpress, adobeIllustrator, adobepdf, ps } from "../assets";
 
 export interface Service {
   name: string;
@@ -21,3 +21,20 @@ export const services: Service[] = [
     image: adobeExpress
   },
 ];
+
+export const services2: Service[] = [
+  {
+    name: "Adobe illustrator,powered by Firefly.",
+    desc: "Transform text prompts into editable vector graphics with Text to Vector Graphic.",
+    button: "Learn more",
+    image: adobeIllustrator
+
+  },
+  {
+    name: "Get it done with Acrobat.",
+    desc: "Edit,share, and e-sign PDFs-all in one place.Acrobat's got it.",
+    button: "Learn more",
+    image: adobepdf
+
+  },
+]

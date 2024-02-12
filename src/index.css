@@ -6,6 +6,27 @@
 
 @layer utilities {
   .myBackground {
-    background-image: url("./assets/asset\ 5.png");
+    background-image: url("./assets/asset5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
+
+  .serviceImg {
+    background-image: url("./assets/asset12.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  .serviceImg2 {
+    background-image: url("./assets/pdf.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+  }
+
+
 }

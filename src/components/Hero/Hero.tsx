@@ -1,23 +1,18 @@
-import { background } from "../../assets";
+// import { background } from "../../assets";
 import Service from "./Service";
 
 export default function Hero() {
   return (
-    <div className="">
-      <img
-        src={background}
-        alt=""
-        className="absolute w-screen h-screen z-[-1]"
-      />
+    <div className='myBackground'>
 
       <div className="p-[40px] pt-[150px]">
 
         <div>
-          <p className="text-[36px] leading-[45px] mb-[8px] font-medium text-[#2c2c2c]">
+          <p className="text-[36px] leading-[45px] mb-[10px] font-medium text-[#2c2c2c]">
             Do it all with Adobe Creative Cloud.
           </p>
           <div className="flex flex-col items-start my-[24px] gap-[24px]">
-            <button className="px-[24px] pt-[10px] pb-[8px] w-full font-medium text-[19px] leading-[24px] text-center bg-[#1473e6] text-white rounded-[25px]">
+            <button className="px-[24px] pt-[10px] pb-[10px] flex-1 hover:bg-[#0d66d0] w-full font-medium text-[19px] leading-[24px] text-center bg-[#1473e6] text-white rounded-[25px]">
               Free trial
             </button>
             <p className="text-[18px] underline leading-[27px] text-[#2c2c2c] ">
