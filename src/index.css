@@ -28,5 +28,34 @@
     background-position: center;
   }
 
+  .appsImg {
+    background-image: url("./assets/asset16.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .myGradient {
+    background-image: linear-gradient(to bottom, #d689ec,
+        #e12dba);
+  }
+
+  .myGradient2 {
+    background-image: linear-gradient(to top left, #ab00fa,
+        #ff1900);
+  }
+
+  .summitImg {
+    background-image: url("./assets/asset19.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -55px;
+  }
+
+  .myGradient3 {
+    background-image: linear-gradient(to left, #02cf06,
+        #09b1d3);
+  }
+
 
 }

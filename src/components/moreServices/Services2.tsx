@@ -2,7 +2,7 @@ import { services2 } from "../../constants"
 
 export default function Services2() {
     return (
-        <div className="p-[24px] ">
+        <div>
             <div className="px-[24px] pt-[32px] pb-[24px] mb-[50px] rounded-[20px] h-[500px] serviceImg ">
                 <div>
                     <h2 className="text-[20px] leading-[25px] font-medium text-mytext-0 mb-[8px] ">{services2[0].name}</h2>

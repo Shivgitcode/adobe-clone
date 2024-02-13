@@ -7,6 +7,12 @@ export interface Service {
   image: string
 }
 
+export interface News {
+  name: string,
+  desc: string,
+  button: string
+}
+
 export const services: Service[] = [
   {
     name: "Adobe Photoshop,powered by Firefly",
@@ -38,3 +44,21 @@ export const services2: Service[] = [
 
   },
 ]
+
+export const news: News[] = [
+  { name: "Announcing our first-ever Adobe Film & TV Fund.", desc: "Adobe grants aim to increase diversity in the entertainment industry.", button: "Read the story" },
+  {
+    name: "Introducing major audio updates in Premiere Pro.",
+    desc: "Intuitive audio workflow debuts ahead of 2024 Sundance Film Festival",
+    button: "Read the story"
+
+  },
+  {
+    name: "Adobe recognized in TIME Best Inventions of 2023.",
+    desc: "Photoshop generative AI features and Adobe Liquid Mode make TIME'S top 200.",
+    button: "Read the story"
+  }
+]
+
+
+export const 
