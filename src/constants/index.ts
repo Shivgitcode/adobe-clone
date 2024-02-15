@@ -13,6 +13,14 @@ export interface News {
   button: string
 }
 
+
+export interface Option {
+  id: string;
+  name: string;
+  moreOptions: string[]
+
+}
+
 export const services: Service[] = [
   {
     name: "Adobe Photoshop,powered by Firefly",
@@ -60,5 +68,109 @@ export const news: News[] = [
   }
 ]
 
+export const options: Option[] = [
+  {
+    id: "shop for",
+    name: "Shop for",
+    moreOptions: [
+      "Creative Cloud",
+      "Photoshop",
+      "Adobe Express",
+      "Photography",
+      "Premeire Pro",
+      "Adobe Stock",
+      "Elements Family",
+      "Document Cloud",
+      "Acrobat",
+      "Acrobat Sign",
+      "Special offers",
+      "View plans and pricing",
+      "View all products"
+    ]
+  },
+  {
+    id: "for business",
+    name: "For business",
+    moreOptions: [
+      "Creative Cloud for business",
+      "Creative Cloud for enterprise",
+      "Acrobat for Business",
+    ]
+  },
+  {
+    id: "for education",
+    name: "For education",
+    moreOptions: [
+      "Discounts for students and teachers",
+      "Schools and universities",
+      "Digital Learning Solutions",
+    ]
+  },
+  {
+    id: "for mobile",
+    name: "For mobile",
+    moreOptions: [
+      "Apps for ios",
+      "Apps for Android",
+    ]
+  },
+  {
+    id: "experience cloud",
+    name: "Experience Cloud",
+    moreOptions: [
+      "What is Experience Cloud?",
+      "Analytics",
+      "Experience Manager",
+      "Commerce",
+      "Marketo Engage",
+      "Workfront",
+      "Terms of Use"
+    ]
+  },
+  {
+    id: "support",
+    name: "Support",
+    moreOptions: [
+      "Download and install",
+      "Help Center",
+      "Adobe Support Community",
+      "Enterprise Support",
+      "Genuine software"
+    ]
+  },
+  {
+    id: "resources",
+    name: "Resources",
+    moreOptions: [
+      "Adobe Blog",
+      "Adobe Developer",
+    ]
+  },
+  {
+    id: "Adobe Account",
+    name: "Adobe Account",
+    moreOptions: [
+      "Log in to your account",
+    ]
+  },
+  {
+    id: "adobe",
+    name: "Adobe ",
+    moreOptions: [
+      "About",
+      "Careers",
+      "Newsroom",
+      "Corporate responsibility",
+      "Investor Relations",
+      "Supply chain",
+      "Trust Center",
+      "Events",
+      "Diversity and inclusion",
+      "Integrity"
+    ]
+  },
 
-export const 
+
+
+
+]
