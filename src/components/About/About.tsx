@@ -1,13 +1,17 @@
 
-import { useContext } from "react";
+// import { useContext } from "react";
 import OptionCard from "./OptionCard";
-import { AppContext } from "../../context/AppContext";
+// import { AppContext } from "../../context/AppContext";
+
+import { useAppContext } from "../../context/AppContext";
 export default function About() {
-    const { isHidden } = useContext(AppContext)
+    const {
+        isHidden
+    } = useAppContext();
     return (
         <div className="my-[20px] bg-[#fafafa]">
             {isHidden.map(el => {
-                return <OptionCard el={el}></OptionCard>
+                return <OptionCard key={el.id} el={el}></OptionCard>
             })}
         </div>
     )
