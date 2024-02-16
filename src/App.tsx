@@ -6,6 +6,7 @@ import Cloud from "./components/cloud/Cloud";
 import Apps from "./components/Apps/Apps"
 import Summit from "./components/Summit/Summit";
 import News from "./components/News/News";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
 
       </div>
+      <About></About>
     </div>
   );
 }

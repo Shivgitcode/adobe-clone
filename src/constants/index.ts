@@ -18,6 +18,7 @@ export interface Option {
   id: string;
   name: string;
   moreOptions: string[]
+  hidden: boolean
 
 }
 
@@ -86,7 +87,8 @@ export const options: Option[] = [
       "Special offers",
       "View plans and pricing",
       "View all products"
-    ]
+    ],
+    hidden: true
   },
   {
     id: "for business",
@@ -95,7 +97,8 @@ export const options: Option[] = [
       "Creative Cloud for business",
       "Creative Cloud for enterprise",
       "Acrobat for Business",
-    ]
+    ],
+    hidden: true
   },
   {
     id: "for education",
@@ -104,7 +107,8 @@ export const options: Option[] = [
       "Discounts for students and teachers",
       "Schools and universities",
       "Digital Learning Solutions",
-    ]
+    ],
+    hidden: true
   },
   {
     id: "for mobile",
@@ -112,7 +116,8 @@ export const options: Option[] = [
     moreOptions: [
       "Apps for ios",
       "Apps for Android",
-    ]
+    ],
+    hidden: true
   },
   {
     id: "experience cloud",
@@ -125,7 +130,8 @@ export const options: Option[] = [
       "Marketo Engage",
       "Workfront",
       "Terms of Use"
-    ]
+    ],
+    hidden: true
   },
   {
     id: "support",
@@ -136,7 +142,8 @@ export const options: Option[] = [
       "Adobe Support Community",
       "Enterprise Support",
       "Genuine software"
-    ]
+    ],
+    hidden: true
   },
   {
     id: "resources",
@@ -144,14 +151,16 @@ export const options: Option[] = [
     moreOptions: [
       "Adobe Blog",
       "Adobe Developer",
-    ]
+    ],
+    hidden: true
   },
   {
     id: "Adobe Account",
     name: "Adobe Account",
     moreOptions: [
       "Log in to your account",
-    ]
+    ],
+    hidden: true
   },
   {
     id: "adobe",
@@ -167,7 +176,8 @@ export const options: Option[] = [
       "Events",
       "Diversity and inclusion",
       "Integrity"
-    ]
+    ],
+    hidden: true
   },
 
 
