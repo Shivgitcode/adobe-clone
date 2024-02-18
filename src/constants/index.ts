@@ -13,6 +13,12 @@ export interface News {
   button: string
 }
 
+export interface Sidebar {
+  id: number,
+  name: string,
+
+}
+
 
 export interface Option {
   id: string;
@@ -183,4 +189,24 @@ export const options: Option[] = [
 
 
 
+]
+
+
+export const sidebar: Sidebar[] = [
+  {
+    id: 1,
+    name: "Creativity & Design"
+  },
+  {
+    id: 2,
+    name: "PDF & E-signatures"
+  },
+  {
+    id: 3,
+    name: "Marketing & Commerce"
+  },
+  {
+    id: 4,
+    name: "Help & Support"
+  }
 ]

@@ -1,7 +1,17 @@
 import { IoReorderThree } from "react-icons/io5";
 import { adobe } from "../../assets";
+import Sidebar from "./Sidebar";
+import { useAppContext } from "../../context/AppContext";
+// import { MouseEventHandler } from "react";
 
 export default function Navbar() {
+  const { setShow } = useAppContext()
+
+  function handleNav() {
+    setShow(prev => {
+      return !prev
+    })
+  }
   return (
     <div className="w-screen overflow-hidden py-[15px] fixed z-[2] bg-white">
       <div className="w-[90%] mx-auto flex items-center  justify-between">
@@ -9,6 +19,7 @@ export default function Navbar() {
           <IoReorderThree
             fontSize={"30px"}
             className="h-full ml-[-5px]"
+            onClick={handleNav}
           ></IoReorderThree>
           <div className="flex items-center justify-center px-[8px] gap-[10px]">
             <img src={adobe} alt="" className="w-[25px] h-[22px]" />
