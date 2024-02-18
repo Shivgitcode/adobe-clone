@@ -1,6 +1,7 @@
 // import { GiHidden } from "react-icons/gi"
 import { Option } from "../../constants"
 import { useAppContext } from "../../context/AppContext"
+import { IoIosArrowDown } from "react-icons/io";
 
 type OptionProp = {
     el: Option
@@ -14,7 +15,7 @@ export default function OptionCard({ el }: OptionProp) {
 
     return (
         <div className={`py-[12px] w-full pr-[44px] pl-[32px] ${el.name === "Shop for" ? "border-none" : "border-t-[0.5px]"}`} onClick={() => handleOptions(el.id)}>
-            <div className="text-[14px] leading-[19.6px] text-[#505050] font-medium">{el.name}</div>
+            <div className="text-[14px] leading-[19.6px] text-[#505050] font-medium flex items-center justify-between">{el.name} <IoIosArrowDown></IoIosArrowDown></div>
             <ul className={`py-[12px] flex flex-col items-start gap-[2px] ${el.hidden && "hidden"}`}>
                 {el.moreOptions.map(el => {
                     return (
