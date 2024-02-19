@@ -2,6 +2,7 @@ import { IoReorderThree } from "react-icons/io5";
 import { adobe } from "../../assets";
 import Sidebar from "./Sidebar";
 import { useAppContext } from "../../context/AppContext";
+import { sidebar } from "../../constants";
 // import { MouseEventHandler } from "react";
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
   }
   return (
     <div className="w-screen overflow-hidden py-[15px] fixed z-[2] bg-white">
-      <div className="w-[90%] mx-auto flex items-center  justify-between">
+      <div className="w-[90%] mx-auto flex items-center  justify-between sm:hidden">
         <div className="flex items-center justify-center gap-[10px]">
           <IoReorderThree
             fontSize={"30px"}
@@ -32,6 +33,16 @@ export default function Navbar() {
         <div className="py-[11px] hover:text-[#136ff6] px-[8px] text-[14px] text-[#4b4b4b] rounded-[4px] ">
           Sign In
         </div>
+      </div>
+
+      {/* navbar */}
+
+      <div className="hidden lg:flex">
+        <div>
+
+        </div>
+
+
       </div>
     </div>
   );
