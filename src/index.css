@@ -15,15 +15,14 @@
   .serviceImg {
     background-image: url("./assets/asset12.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
-
+    /* background-size: cover;   */
     background-position: center;
   }
 
   .serviceImg2 {
     background-image: url("./assets/pdf.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 
     background-position: center;
   }
@@ -55,6 +54,16 @@
   .myGradient3 {
     background-image: linear-gradient(to left, #02cf06,
         #09b1d3);
+  }
+
+  .glasseffect {
+    backdrop-filter: blur(38px);
+    --webkit-backdrop-filter: blur(38px);
+    --moz-backdrop-filter: blur(38px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    border: 2px solid white;
+    /* border: 1px solid rgba(255, 255, 255, 0.25); */
   }
 
 

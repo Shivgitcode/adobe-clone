@@ -1,6 +1,7 @@
 import { adobeExpress, adobeIllustrator, adobepdf, ps } from "../assets";
 
 export interface Service {
+  id?: number;
   name: string;
   desc: string;
   button: string;
@@ -30,12 +31,14 @@ export interface Option {
 
 export const services: Service[] = [
   {
+    id: 1,
     name: "Adobe Photoshop,powered by Firefly",
     desc: "Now with Generative Fill and Generative Expand,you can add,remove,or extend content in any image automagically",
     button: "Start free trial",
     image: ps
   },
   {
+    id: 2,
     name: "Adobe Express,powered by Firefly.",
     desc: "Get started with the all-in-one,content creation app and new generative AI features like Generative Fill,Text to Image, and Text to Template.",
     button: "Get Adobe Express free",

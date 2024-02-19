@@ -2,8 +2,8 @@ import { services2 } from "../../constants"
 
 export default function Services2() {
     return (
-        <div>
-            <div className="px-[24px] pt-[32px] pb-[24px] mb-[50px] rounded-[20px] h-[500px] serviceImg ">
+        <div className="flex flex-col gap-[1rem] lg:flex-row lg:gap-[2rem]">
+            <div className="lg:w-[500px] px-[24px] pt-[32px] pb-[24px] rounded-[20px] h-[500px] serviceImg ">
                 <div>
                     <h2 className="text-[20px] leading-[25px] font-medium text-mytext-0 mb-[8px] ">{services2[0].name}</h2>
                     <p className="my-[8px] text-[18px] leading-[27px] text-mytext-0 font-normal" >{services2[0].desc}</p>
@@ -14,7 +14,7 @@ export default function Services2() {
                 </div>
             </div>
 
-            <div className="px-[24px] pt-[32px] pb-[24px] mb-[50px] rounded-[20px] h-[500px] serviceImg2 bg-[#EB1000] ">
+            <div className="lg:w-[500px] px-[24px] pt-[32px] pb-[24px] rounded-[20px] h-[500px] serviceImg2 bg-[#EB1000] ">
                 <div>
                     <h2 className="text-[20px] leading-[25px] font-medium text-white mb-[8px] ">{services2[1].name}</h2>
                     <p className="my-[8px] text-[18px] leading-[27px] text-white font-normal" >{services2[1].desc}</p>

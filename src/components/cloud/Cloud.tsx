@@ -1,13 +1,12 @@
 export default function Cloud() {
     return (
-        <div className="rounded-[20px] bg-[#ededed] mb-[32px]">
+        <div className="w-[500px] h-[500px] rounded-[20px] bg-[#ededed]">
             <div className="px-[24px] pt-[32px] pb-[24px] myGradient2 rounded-tr-[16px] rounded-tl-[16px] flex flex-col gap-[8px]">
                 <h2 className="text-[20px] leading-[25px] text-white font-medium">Creative Cloud</h2>
                 <p className="text-[14px] leading-[21px] text-white font-normal">Creative Cloud for business</p>
                 <p className="text-[14px] leading-[21px] text-white font-normal">Creative Cloud for business</p>
                 <p className="text-[14px] leading-[21px] text-white font-normal">Student Pricing-save over 60%
                 </p>
-
             </div>
 
 

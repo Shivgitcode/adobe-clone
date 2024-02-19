@@ -3,6 +3,8 @@ import { adobe } from "../../assets";
 import Sidebar from "./Sidebar";
 import { useAppContext } from "../../context/AppContext";
 import { sidebar } from "../../constants";
+import { IoIosArrowDown } from "react-icons/io";
+
 // import { MouseEventHandler } from "react";
 
 export default function Navbar() {
@@ -37,10 +39,24 @@ export default function Navbar() {
 
       {/* navbar */}
 
-      <div className="hidden lg:flex">
-        <div>
-
+      <div className="hidden lg:flex justify-between items-center mx-auto w-[76%] h-full">
+        <div className="flex gap-[10px]">
+          <img src={adobe} alt="" className="w-[25px] h-[22px]" />
+          <p className="text-[18px] leading-[27px] text-[#fa0f00] font-medium">
+            Adobe
+          </p>
+          <div className="flex items-center ">
+            {sidebar.map(el => {
+              return <p className="px-[20px] text-[14px] leading-[19.6px] text-[#2c2c2c] font-normal flex items-center gap-[5px]">{el.name} <IoIosArrowDown></IoIosArrowDown> </p>
+            })}
+          </div>
         </div>
+
+        <div>
+          <a className="text-[14px] leading-[27px] text-[#4b4b4b] font-normal hover:text-[#136ff6] py-[11px] px-[8px] rounded-sm">Sign In</a>
+        </div>
+
+
 
 
       </div>

@@ -17,14 +17,12 @@ function App() {
       <Sidebar></Sidebar>
 
       <Hero></Hero>
-      <div className="p-[24px]">
+      <div className="p-[24px] flex flex-col gap-[2rem] lg:flex-row justify-center items-center lg:flex-wrap lg:gap-[2rem]">
         <Services2></Services2>
         <Cloud></Cloud>
         <Apps></Apps>
         <Summit></Summit>
         <News></News>
-
-
       </div>
       <About></About>
       <Footer></Footer>

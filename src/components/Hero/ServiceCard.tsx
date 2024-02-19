@@ -4,8 +4,14 @@ type ServiceProp = {
 };
 
 export default function ServiceCard({ el }: ServiceProp) {
+  const { id } = el;
   return (
-    <div className="px-[24px] pt-[32px] pb-[24px] bg-white/80 mb-[50px] rounded-[20px] relative">
+    <div className=
+      {`px-[24px] pt-[32px] pb-[24px] bg-white/80 mb-[50px] rounded-[20px] relative
+      ${id === 1 ? "md:w-[calc(70%-24px)]" : "md:w-[calc(30%-24px)] md:ml-[24px]"}
+      glasseffect
+      `}
+    >
       <div>
         <h2 className="text-[20px] leading-[25px] font-medium text-mytext-0 mb-[8px] ">{el.name}</h2>
         <p className="my-[8px] text-[18px] leading-[27px] text-mytext-0 font-normal" >{el.desc}</p>
