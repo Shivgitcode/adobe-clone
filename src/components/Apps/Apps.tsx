@@ -3,7 +3,7 @@ import { apps } from "../../assets";
 export default function App() {
     return (
         <>
-            <div className="w-[500px] flex flex-col px-[24px] pt-[32px] pb-[24px] rounded-[20px] h-[500px] myGradient relative">
+            <div className="lg:w-[500px]  w-full flex flex-col px-[24px] pt-[32px] pb-[24px] rounded-[20px] h-[500px] myGradient relative">
                 <div>
                     <h2 className="text-[20px] leading-[25px] font-medium text-mytext-0 mb-[8px] ">Amazing apps.Endless possibilities.</h2>
                     <p className="my-[8px] text-[18px] leading-[27px] text-mytext-0 font-normal" >Create something beautiful,boost productivity, and deliver engaging experiences with Adobe software.</p>
